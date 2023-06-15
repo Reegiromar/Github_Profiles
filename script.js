@@ -11,7 +11,7 @@ async function getUser(username) {
         getRepos(username)
     } catch(err) {
         if(err.response.status == 404) {
-            createErrorCard('No profile with this userbame found! Please search exist users')
+            createErrorCard('No profile with this username found! <br> Please search exist users')
     }
 }
 
